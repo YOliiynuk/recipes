@@ -1,4 +1,3 @@
-
 import Main from "./../components/main/Main";
 const Data = () => {
     const data = [
@@ -28,16 +27,7 @@ const Data = () => {
             image: "https://i.imgur.com/OMH5x2A.png",
         },
     ];
-    return(
-        <div style={{display: "flex", flexWrap: "wrap", flexDirection: "row", justifyContent: "space-between", alignItems: "center"}}>
 
-
-            {
-                data.map(user => <Main key={user.image} {...user}/>)
-            }
-
-        </div>
-    );
 }
 
 
