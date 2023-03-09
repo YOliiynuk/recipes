@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+.title{
+    text-align: center;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: #000000;
+
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    width: 1920px;
+    height: 767px;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.types{
+    width: 1603px;
+    height: 453px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+
+
+}
