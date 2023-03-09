@@ -1,45 +1,33 @@
+import {useState} from "react";
+import "./app.css";
 import Navbar from "./components/navbar/Navbar";
 import Header from "./components/header/Header";
-import Main from "./components/main/Main";
+import RecipeType from "./components/RecipeType/RecipeType";
+import {data as defaultData} from "./helpers/data.js"
 
-const data = [
-    {
-        id: 1,
-        name: "Dessert",
-        description: "there is so many dessert recipes",
-        image: "https://i.imgur.com/v8Irhk9.png",
 
-    },
-    {
-        id: 2,
-        name: "Drinks",
-        description: "there is so many dessert recipes",
-        image: "https://i.imgur.com/GGCP1rj.png",
-    },
-    {
-        id: 3,
-        name: "Main Dishs",
-        description: "there is so many dessert recipes",
-        image: "https://i.imgur.com/OMH5x2A.png",
-    },
-    {
-        id: 4,
-        name: "Side Dishs",
-        description: "there is so many dessert recipes",
-        image: "https://i.imgur.com/OMH5x2A.png",
-    },
-];
 
 function App() {
+    const [data, setData] = useState(defaultData);
     return(
         <div className="App">
-        <Navbar/>
+            <Navbar/>
 
-        <Header/>
+            <Header/>
 
-        <Main data={data}/>
+            <div className="app">
 
+                <h1 className="title">Recipes</h1>
+
+                <div className="types">
+                    {
+                        data.map((value, index) =>  <RecipeType key ={index} data={value}/>)
+                    }
+                </div>
+
+            </div>
         </div>
     )
+
 }
 export default App;
