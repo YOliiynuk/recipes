@@ -27,6 +27,20 @@
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
+}
+.recipe_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1920px;
+    height: 1565px;
+}
 
+.recipe_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1210px;
+    height: 1440px;
 
 }

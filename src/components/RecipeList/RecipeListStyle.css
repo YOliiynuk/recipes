@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Quando);
+
+.recipeList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    height: 331px;
+    text-align: center;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.15);
+}
+
+.background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 27px;
+    background: #C4C4C4;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.recipeList h3{
+
+    font-family: 'Quando';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.recipeList button{
+    width: 280px;
+    height: 52px;
+    background: #F8A607;
+    border: none;
+    font-family: 'Quando';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
