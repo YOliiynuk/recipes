@@ -5,11 +5,14 @@ import Header from "./components/header/Header";
 import RecipeType from "./components/RecipeType/RecipeType";
 import {data as defaultData} from "./helpers/data.js"
 import RecipeList from "./components/RecipeList/RecipeList";
-import {dataa as defaultDatta} from "./components/RecipeList/RecipeListData"
+import {dataa as defaultDataa} from "./components/RecipeList/RecipeListData"
+import RecipeDetilesItem from "./components/RecipeDetiles/RecipeDetilesItem";
+
 
 function App() {
     const [data, setData] = useState(defaultData);
-    const [dataa, setDataa] = useState(defaultDatta)
+    const [dataa, setDataa] = useState(defaultDataa);
+    const [activeElements, setActiveElements] = useState([]);
     return(
         <div className="App">
             <Navbar/>
@@ -31,9 +34,15 @@ function App() {
             <div className="recipe_container">
                 <div className="recipe_list">
                 {
-                    dataa.map((value, index) => <RecipeList key={index} dataa={value}/> )
+                    dataa.map((value, index) => <RecipeList key={index} data={value} setActiveElements={setActiveElements}/> )
                 }
             </div>
+            </div>
+
+            <div className="types">
+                {
+                   activeElements && activeElements.map((value, index)=> <RecipeDetilesItem data={value} key={index}  /> )
+                }
             </div>
         </div>
     )
