@@ -43,3 +43,27 @@
     line-height: 20px;
     color: #FFFFFF;
 }
+.button_detaild {
+    width: 227px;
+    height: 66px;
+    background: rgba(255, 57, 57, 0.6);
+    font-family: 'Quando';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc (30/24 *100%);
+    color: #FDFDFD;
+    border: none;
+}
+
+.recipeDetalesItem2_row{
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.button_detaild_row{
+    display: flex;
+    justify-content: flex-end;
+}

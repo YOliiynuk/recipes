@@ -1,4 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Quando);
+
+.recipeDetilesItem_row{
+    display: flex;
+    width: 1136px;
+    height: 750px;
+    justify-content: space-between;
+}
 .recipeDetilesItem{
-    border: 1px solid black;
-    width: 300px;
+    height: 750px;
+    width: 477px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.15);
+    font-family: 'Quando';
+    font-style: normal;
+    color: #000000;
+}
+.recipeDetilesItem h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(30/24 *100%);
+}
+.recipeDetilesItem h4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc (20/16 * 100%);
+}
+.recipeDetilesItem h5{
+    font-size: 16px;
+    line-height: 188%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.recipeDetilesItem2 {
+    width: 605px;
+    height: 400px;
+    background-color: #FFC759;
+}
+.recipeDetilesItem2 h2{
+    font-family: 'Quando';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(30/24 *100%)px;
+    color: rgba(0, 0, 0, 0.72);
 }
