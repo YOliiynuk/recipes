@@ -1,13 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 .title{
     text-align: center;
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
-
     color: #000000;
 
 }
@@ -18,7 +16,6 @@
     height: 767px;
     align-items: center;
     justify-content: space-evenly;
-
 }
 .types{
     width: 1920px;
@@ -30,7 +27,7 @@
 }
 .recipe_container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 1920px;
     height: 1565px;
@@ -41,6 +38,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 1210px;
-    height: 1440px;
+    height: 380px;
 
 }
+.details_style{
+    display: flex;
+    width: 1136px;
+    height: 750px;
+    justify-content: space-between;
+}
+
