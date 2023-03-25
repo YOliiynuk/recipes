@@ -1,0 +1,5 @@
+const ADDED = 'ADDED';
+const CHANGED = 'CHANGED';
+const DELETED = 'DELETED';
+
+export {ADDED, CHANGED, DELETED}
